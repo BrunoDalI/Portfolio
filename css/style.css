@@ -14,7 +14,8 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
+    /* --main-color: #754ef9; */
+    --main-color: #20B2AA;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -100,9 +101,21 @@ body {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .header.sticky #darkMode-icon {
+    color: var(--text-color);
+    opacity: .9;
+}
+
+#language-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.header.sticky #language-icon {
     color: var(--text-color);
     opacity: .9;
 }
@@ -208,30 +221,10 @@ section {
 }
 
 @keyframes professionRotate {
-
-    0%,
-    20% {
-        transform: rotate(0deg);
-    }
-
-    25%,
-    45% {
-        transform: rotate(-90deg);
-    }
-
-    50%,
-    70% {
-        transform: rotate(-180deg);
-    }
-
-    75%,
-    95% {
-        transform: rotate(-270deg);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
+    0%, 30% { transform: rotate(0deg); }
+    35%, 65% { transform: rotate(-120deg); }
+    70%, 95% { transform: rotate(-240deg); }
+    100% { transform: rotate(-360deg); }
 }
 
 .home .profession-box .profession {
@@ -241,8 +234,8 @@ section {
     align-items: center;
     flex-direction: column;
     color: var(--main-color);
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
+    transform: rotate(calc(360deg / 3 * var(--i)));
+    transform-origin: 384px center;
     background: var(--bg-color);
     padding: 13px 0;
 }
@@ -291,6 +284,7 @@ section {
     bottom: 0;
     right: 40px;
     pointer-events: none;
+    height: 80vh;
     max-width: 480px;
     max-height: 100vh;
 }
@@ -739,6 +733,14 @@ span {
         margin-bottom: .1rem;
     }
 
+    #language-icon {
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -891,6 +893,10 @@ span {
         right: 6rem;
     }
 
+    #language-icon {
+        right: 6rem;
+    }
+
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-110px, -220px);
     }
@@ -938,4 +944,13 @@ span {
 }
 img {
     border-radius: 20px;
+}
+
+
+.carousel-img {
+    max-width: 60%; /* Reduz o tamanho da imagem; ajuste conforme necessário */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border: 2px solid #ccc; /* Define a borda; altere a cor e espessura conforme seu gosto */
+    border-radius: 10px; /* Opcional: bordas arredondadas */
 }

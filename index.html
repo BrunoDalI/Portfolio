@@ -34,7 +34,7 @@
             <a href="#home" class="active" data-i18n="nav.home">Home</a>
             <a href="#about" data-i18n="nav.about">About</a>
             <a href="#services" data-i18n="nav.services">Services</a>
-            <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="#featured" data-i18n="nav.portfolio">Portfolio</a>
             <a href="#skills" data-i18n="nav.skills">Skills</a>
             <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
@@ -150,9 +150,89 @@
         </div>
     </section>
 
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading" data-i18n="portfolio.title">Latest <span>Projects</span></h2>
+    <!-- featured projects section design -->
+    <section class="portfolio featured" id="featured">
+        <h2 class="heading" data-i18n="featured.title">Featured <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img loading="lazy" src="images/projects/flexa.svg" alt="Flexa">
+
+                <div class="portfolio-layer">
+                    <h4>Flexa</h4>
+                    <p data-i18n="featured.flexa.text">Management app for Pilates studios and running coaching: students, schedule with recurring classes, finances, multiple studios and role-based access.</p>
+                    <div class="portfolio-links">
+                        <span class="portfolio-private"><i class='bx bx-lock-alt'></i><span data-i18n="projects.private">Private code</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img loading="lazy" src="images/projects/orcamentos-online.svg" alt="Orçamentos Online">
+
+                <div class="portfolio-layer">
+                    <h4>Orçamentos Online</h4>
+                    <p data-i18n="featured.orcamentos.text">Flutter app to register clients and company data and generate budgets as PDF, ready to print or share, built with Clean Architecture.</p>
+                    <div class="portfolio-links">
+                        <span class="portfolio-private"><i class='bx bx-lock-alt'></i><span data-i18n="projects.private">Private code</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img loading="lazy" src="images/projects/stellcore.svg" alt="StellCore Software">
+
+                <div class="portfolio-layer">
+                    <h4>StellCore Software</h4>
+                    <p data-i18n="featured.stellcore.text">Institutional website for StellCore Software, a software development company, built with React, TypeScript, Tailwind and shadcn/ui.</p>
+                    <div class="portfolio-links">
+                        <span class="portfolio-private"><i class='bx bx-lock-alt'></i><span data-i18n="projects.private">Private code</span></span>
+                        <a href="https://www.linkedin.com/company/stellcore-software/about/" target="_blank" rel="noopener" aria-label="StellCore Software on LinkedIn"><i class='bx bxl-linkedin'></i><span data-i18n="projects.linkedin">LinkedIn</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img loading="lazy" src="images/projects/estofaria-cardoso.svg" alt="Estofaria Cardoso">
+
+                <div class="portfolio-layer">
+                    <h4>Estofaria Cardoso</h4>
+                    <p data-i18n="featured.estofaria.text">Website built with Flutter Web for an upholstery shop in Curitiba, with parallax sections and a contact form handled with BLoC.</p>
+                    <div class="portfolio-links">
+                        <span class="portfolio-private"><i class='bx bx-lock-alt'></i><span data-i18n="projects.private">Private code</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <span class="portfolio-badge" data-i18n="projects.badge">Live</span>
+                <img loading="lazy" src="images/projects/unique-combinations.svg" alt="Unique Combinations">
+
+                <div class="portfolio-layer">
+                    <h4>Unique Combinations</h4>
+                    <p data-i18n="featured.unique.text">Commercial landing page for Unique Combinations, a Windows app that helps companies improve their performance with accurate statistics.</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/GMCfromhell/unique-combinations-webpage" target="_blank" rel="noopener" aria-label="Unique Combinations on GitHub"><i class='bx bxl-github'></i><span data-i18n="projects.code">Code</span></a>
+                        <a href="https://gmcfromhell.github.io/unique-combinations-webpage/" target="_blank" rel="noopener" aria-label="Unique Combinations live site"><i class='bx bx-link-external'></i><span data-i18n="projects.live">Live site</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <span class="portfolio-badge" data-i18n="projects.badge">Live</span>
+                <img loading="lazy" src="images/projects/stock-regulator.svg" alt="Stock Regulator">
+
+                <div class="portfolio-layer">
+                    <h4>Stock Regulator</h4>
+                    <p data-i18n="featured.stock.text">Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i><span data-i18n="projects.code">Code</span></a>
+                        <a href="https://brunodali.github.io/stock-regulator-webpage/" target="_blank" rel="noopener" aria-label="Stock Regulator live site"><i class='bx bx-link-external'></i><span data-i18n="projects.live">Live site</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- other projects section design -->
+    <section class="portfolio other-projects" id="other-projects">
+        <h2 class="heading" data-i18n="portfolio.title">Other <span>Projects</span></h2>
+        <p class="section-subtitle" data-i18n="portfolio.subtitle">Study and academic projects where I practiced new technologies.</p>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -185,19 +265,6 @@
                     <p data-i18n="projects.cnn.text">Computer Science thesis: a convolutional neural network that identifies each room of a simulated house from images.</p>
                     <div class="portfolio-links">
                         <a href="https://github.com/BrunoDalI/IA_CNN" target="_blank" rel="noopener" aria-label="Room Classifier with CNN on GitHub"><i class='bx bxl-github'></i><span data-i18n="projects.code">Code</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <span class="portfolio-badge" data-i18n="projects.badge">Live</span>
-                <img loading="lazy" src="images/projects/stock-regulator.svg" alt="Stock Regulator">
-
-                <div class="portfolio-layer">
-                    <h4>Stock Regulator</h4>
-                    <p data-i18n="projects.stock.text">Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
-                    <div class="portfolio-links">
-                        <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i><span data-i18n="projects.code">Code</span></a>
-                        <a href="https://brunodali.github.io/stock-regulator-webpage/" target="_blank" rel="noopener" aria-label="Stock Regulator live site"><i class='bx bx-link-external'></i><span data-i18n="projects.live">Live site</span></a>
                     </div>
                 </div>
             </div>

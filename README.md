@@ -18,17 +18,17 @@ Site estático feito com HTML, CSS e JavaScript puro, com:
 | StellCore Software | React, TypeScript, Tailwind, shadcn/ui | Código privado · [LinkedIn](https://www.linkedin.com/company/stellcore-software/about/) |
 | Estofaria Cardoso | Flutter Web, BLoC, go_router | Código privado |
 | Unique Combinations | HTML, CSS, Bootstrap | [Repositório](https://github.com/GMCfromhell/unique-combinations-webpage) · [Site](https://gmcfromhell.github.io/unique-combinations-webpage/) |
-| Stock Regulator | App Android + landing page (HTML, CSS, Bootstrap) | [Google Play](https://play.google.com/store/apps/details?id=com.stock_regulator) · [Repositório](https://github.com/BrunoDalI/stock-regulator-webpage) · [Site](https://brunodali.github.io/stock-regulator-webpage/) |
+| Stock Regulator | App Android + landing page (HTML, CSS, Bootstrap) | [Google Play](https://play.google.com/store/apps/details?id=com.stock_regulator) · [Repositório](https://github.com/bruno-dall/stock-regulator-webpage) · [Site](https://bruno-dall.github.io/stock-regulator-webpage/) |
 
 ## Outros projetos
 
 | Projeto | Stack | Repositório |
 | --- | --- | --- |
-| BRL Exchange Rate App | Flutter, Clean Architecture | [Specs](https://github.com/BrunoDalI/Specs) |
-| BrasilCripto | Flutter, BLoC, Dio, SQLite | [brasil_cripto](https://github.com/BrunoDalI/brasil_cripto) |
-| Classificador de Cômodos com CNN (TCC) | Python, TensorFlow/Keras | [IA_CNN](https://github.com/BrunoDalI/IA_CNN) |
-| Kanban Board | React | [kanban-with-react](https://github.com/BrunoDalI/kanban-with-react) |
-| Snake Game | Python, Pygame | [Processamento-Digital-de-imagem](https://github.com/BrunoDalI/Processamento-Digital-de-imagem) |
+| BRL Exchange Rate App | Flutter, Clean Architecture | [Specs](https://github.com/bruno-dall/Specs) |
+| BrasilCripto | Flutter, BLoC, Dio, SQLite | [brasil_cripto](https://github.com/bruno-dall/brasil_cripto) |
+| Classificador de Cômodos com CNN (TCC) | Python, TensorFlow/Keras | [IA_CNN](https://github.com/bruno-dall/IA_CNN) |
+| Kanban Board | React | [kanban-with-react](https://github.com/bruno-dall/kanban-with-react) |
+| Snake Game | Python, Pygame | [Processamento-Digital-de-imagem](https://github.com/bruno-dall/Processamento-Digital-de-imagem) |
 
 ## Estrutura
 

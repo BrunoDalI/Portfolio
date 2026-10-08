@@ -18,7 +18,7 @@ Site estático feito com HTML, CSS e JavaScript puro, com:
 | StellCore Software | React, TypeScript, Tailwind, shadcn/ui | Código privado · [LinkedIn](https://www.linkedin.com/company/stellcore-software/about/) |
 | Estofaria Cardoso | Flutter Web, BLoC, go_router | Código privado |
 | Unique Combinations | HTML, CSS, Bootstrap | [Repositório](https://github.com/GMCfromhell/unique-combinations-webpage) · [Site](https://gmcfromhell.github.io/unique-combinations-webpage/) |
-| Stock Regulator | HTML, CSS, Bootstrap | [Repositório](https://github.com/BrunoDalI/stock-regulator-webpage) · [Site](https://brunodali.github.io/stock-regulator-webpage/) |
+| Stock Regulator | App Android + landing page (HTML, CSS, Bootstrap) | [Google Play](https://play.google.com/store/apps/details?id=com.stock_regulator) · [Repositório](https://github.com/BrunoDalI/stock-regulator-webpage) · [Site](https://brunodali.github.io/stock-regulator-webpage/) |
 
 ## Outros projetos
 

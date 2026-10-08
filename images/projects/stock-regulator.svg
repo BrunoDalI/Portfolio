@@ -3,8 +3,8 @@
 <rect width="640" height="426" fill="url(#g)"/>
 <circle cx="560" cy="60" r="160" fill="#fff" fill-opacity=".06"/><circle cx="600" cy="400" r="120" fill="#fff" fill-opacity=".05"/>
 <rect x="370" y="110" width="250" height="200" rx="16" fill="#fff" fill-opacity=".1"/><rect x="390" y="220" width="34" height="70" rx="6" fill="#fff" fill-opacity="0.55"/><rect x="438" y="170" width="34" height="120" rx="6" fill="#fff" fill-opacity="0.64"/><rect x="486" y="195" width="34" height="95" rx="6" fill="#fff" fill-opacity="0.73"/><rect x="534" y="130" width="34" height="160" rx="6" fill="#fff" fill-opacity="0.82"/><rect x="582" y="155" width="34" height="135" rx="6" fill="#fff" fill-opacity="0.91"/><line x1="380" x2="610" y1="292" y2="292" stroke="#fff" stroke-width="3"/>
-<text x="40" y="70" font-size="15" font-weight="600" fill="#fff" fill-opacity=".8" letter-spacing="2">LANDING PAGE</text>
+<text x="40" y="70" font-size="15" font-weight="600" fill="#fff" fill-opacity=".8" letter-spacing="2">ANDROID APP · LANDING PAGE</text>
 <text x="40" y="120" font-size="40" font-weight="800" fill="#fff">Stock Regulator</text>
-<text x="40" y="174" font-size="17" fill="#fff" fill-opacity=".85">Website for an inventory control product</text>
+<text x="40" y="174" font-size="17" fill="#fff" fill-opacity=".85">Inventory control app and website</text>
 <rect x="40" y="330" width="62" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="71" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">HTML</text><rect x="111.6" y="330" width="53" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="138" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">CSS</text><rect x="174.8" y="330" width="104" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="227" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">Bootstrap</text>
 </svg>

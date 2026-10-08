@@ -150,7 +150,7 @@ const translations = {
         "edu.bachelor.date": "Concluído em 2022",
         "edu.pos.title": "Pós-graduação em Desenvolvimento Mobile",
         "edu.pos.date": "2024 – 2025 · 360 horas",
-        "edu.document": "Ver documento",
+        "edu.diploma": "Ver diploma",
         "cert.drive": "Ver todos no Google Drive",
         "contact.title": "Fale <span>Comigo!</span>",
         "contact.text": "Tem um projeto em mente ou uma oportunidade para conversar? Fale comigo por um dos canais abaixo.",

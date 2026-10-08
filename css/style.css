@@ -512,15 +512,48 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    gap: .6rem;
+    height: 4.4rem;
+    padding: 0 1.8rem;
     background: var(--white-color);
-    border-radius: 50%;
+    border-radius: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.portfolio-layer a span {
+    color: #333;
 }
 
 .portfolio-layer a i {
     font-size: 2rem;
     color: #333;
+}
+
+.portfolio-badge {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .4rem 1.2rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white-color);
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
+}
+
+.portfolio-badge::before {
+    content: '';
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: var(--white-color);
 }
 
 .skills {

@@ -684,6 +684,216 @@ span {
     font-weight: 600;
 }
 
+.certifications {
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+
+.certifications h2 {
+    margin-bottom: 4rem;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 2rem;
+    max-width: 100rem;
+    margin: 0 auto 5rem;
+}
+
+.education-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2.5rem;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    border-left: .6rem solid var(--main-color);
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
+
+.education-box > i {
+    font-size: 4.5rem;
+    color: var(--main-color);
+}
+
+.education-box h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.education-box p {
+    font-size: 1.5rem;
+    margin: .4rem 0;
+}
+
+.education-box span {
+    color: inherit;
+    font-size: 1.4rem;
+    opacity: .7;
+}
+
+.education-link {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.education-link span {
+    color: var(--main-color);
+    opacity: 1;
+}
+
+.cert-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.cert-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .8rem 1.6rem;
+    background: var(--bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.cert-filter i {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.cert-filter:hover,
+.cert-filter.active {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.cert-filter:hover i,
+.cert-filter.active i {
+    color: var(--white-color);
+}
+
+.cert-count {
+    padding: 0 .7rem;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 1.6rem;
+}
+
+.cert-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.8rem 2rem;
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    border-bottom: .3rem solid var(--main-color);
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    color: var(--text-color);
+    transition: .3s ease;
+}
+
+.cert-box:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 .1rem 1.5rem var(--shadow-color);
+}
+
+.cert-icon {
+    font-size: 3.2rem;
+    color: var(--main-color);
+}
+
+.cert-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cert-meta {
+    display: flex;
+    gap: .6rem;
+    margin-bottom: .4rem;
+}
+
+.cert-provider,
+.cert-degree {
+    padding: .1rem .8rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+.cert-provider {
+    color: var(--text-color);
+    background: rgba(128, 128, 128, .15);
+}
+
+.cert-degree {
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.cert-box h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.cert-open {
+    font-size: 2rem;
+    opacity: .5;
+}
+
+.cert-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.cert-actions .btn {
+    cursor: pointer;
+}
+
+.cert-more[hidden] {
+    display: none;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-outline:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
 .contact {
     min-height: auto;
     padding-bottom: 10rem;
@@ -875,6 +1085,12 @@ span {
     .home .profession-container .overlay {
         right: -43%;
     }
+
+    /* keep the 7 links on one line before the mobile menu kicks in */
+    .navbar a {
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -1040,6 +1256,15 @@ span {
 
     .other-projects .portfolio-box {
         flex-basis: 100%;
+    }
+
+    .education-container,
+    .cert-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-box {
+        padding: 2rem;
     }
 }
 

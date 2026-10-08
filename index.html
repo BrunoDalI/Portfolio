@@ -21,7 +21,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css?v=20261008">   
+    <link rel="stylesheet" href="css/style.css?v=20261009">   
 </head>
 
 <body>
@@ -36,6 +36,7 @@
             <a href="#services" data-i18n="nav.services">Services</a>
             <a href="#featured" data-i18n="nav.portfolio">Portfolio</a>
             <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#certifications" data-i18n="nav.certifications">Certificates</a>
             <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
@@ -357,6 +358,42 @@
         </div>
     </section>
 
+    <!-- certifications section design -->
+    <section class="certifications" id="certifications">
+        <h2 class="heading" data-i18n="cert.title">Education &amp; <span>Certificates</span></h2>
+
+        <div class="education-container">
+            <div class="education-box">
+                <i class='bx bxs-graduation'></i>
+                <div>
+                    <h3 data-i18n="edu.bachelor.title">Bachelor's in Computer Science</h3>
+                    <p>Universidade Tuiuti do Paraná</p>
+                    <span data-i18n="edu.bachelor.date">Completed in 2022</span>
+                </div>
+            </div>
+            <div class="education-box">
+                <i class='bx bx-mobile-alt'></i>
+                <div>
+                    <h3 data-i18n="edu.pos.title">Postgraduate in Mobile Development</h3>
+                    <p>Universidade Estácio de Sá</p>
+                    <span data-i18n="edu.pos.date">2024 – 2025 · 360 hours</span>
+                    <a href="https://drive.google.com/file/d/1xKrVwq1ytKYDlGQUpTw_OAXxm-8QvY58/view" target="_blank" rel="noopener" class="education-link"><i class='bx bx-link-external'></i><span data-i18n="edu.document">View document</span></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="section-subtitle cert-summary"></p>
+
+        <div class="cert-filters" role="tablist" aria-label="Certificate categories"></div>
+
+        <div class="cert-container"></div>
+
+        <div class="cert-actions">
+            <button type="button" class="btn cert-more">Show more</button>
+            <a href="https://drive.google.com/drive/folders/1wUBy9-HNMeemb8Y1W5g8RrJfcHoFV3Kt" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="cert.drive">See all on Google Drive</a>
+        </div>
+    </section>
+
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading" data-i18n="contact.title">Contact <span>Me!</span></h2>
@@ -392,7 +429,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- custom js -->
-    <script src="js/script.js?v=20261008"></script>
+    <script src="js/script.js?v=20261009"></script>
+    <script src="js/certificates-data.js?v=20261009"></script>
+    <script src="js/certificates.js?v=20261009"></script>
 </body>
 
 </html>

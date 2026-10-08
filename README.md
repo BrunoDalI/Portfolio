@@ -35,13 +35,22 @@ Site estático feito com HTML, CSS e JavaScript puro, com:
 ```
 ├── index.html
 ├── css/style.css
-├── js/script.js          # menu, scroll spy, tema, idioma e animações
+├── js/script.js              # menu, scroll spy, tema, idioma e animações
+├── js/certificates-data.js   # lista de certificados (arquivos do Google Drive)
+├── js/certificates.js        # filtros e lista da seção de certificados
 └── images/
-    ├── projects/         # capas SVG dos projetos
-    ├── flags/            # bandeiras do seletor de idioma
+    ├── projects/             # capas SVG dos projetos
+    ├── flags/                # bandeiras do seletor de idioma
     ├── home.png
     └── about.png
 ```
+
+## Certificados
+
+Os certificados ficam na pasta pública do Google Drive **Certificados**. Para adicionar um novo,
+suba o arquivo no Drive e inclua uma linha em `js/certificates-data.js` com o título, a plataforma (`provider`),
+a categoria (`flutter`, `ios`, `react-native`, `java`, `web`, `design`, `tools`, `data`, `agile`, `soft` ou `other`),
+`degree: true` se for uma formação completa e o `id` do arquivo (o trecho entre `/d/` e `/view` do link do Drive).
 
 ## Rodando localmente
 

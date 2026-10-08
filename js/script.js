@@ -144,6 +144,14 @@ const translations = {
         "projects.private": "Código privado",
         "projects.linkedin": "LinkedIn",
         "skills.title": "Minhas <span>Skills</span>",
+        "nav.certifications": "Certificados",
+        "cert.title": "Formação &amp; <span>Certificados</span>",
+        "edu.bachelor.title": "Bacharelado em Ciência da Computação",
+        "edu.bachelor.date": "Concluído em 2022",
+        "edu.pos.title": "Pós-graduação em Desenvolvimento Mobile",
+        "edu.pos.date": "2024 – 2025 · 360 horas",
+        "edu.document": "Ver documento",
+        "cert.drive": "Ver todos no Google Drive",
         "contact.title": "Fale <span>Comigo!</span>",
         "contact.text": "Tem um projeto em mente ou uma oportunidade para conversar? Fale comigo por um dos canais abaixo.",
         "footer.rights": "Todos os direitos reservados."
@@ -169,6 +177,9 @@ function setLanguage(lang) {
     languageIcon.setAttribute('aria-label', lang === 'en' ? 'Mudar para português' : 'Switch to English');
 
     try { localStorage.setItem('lang', lang); } catch (e) {}
+
+    // lets sections rendered by JS (e.g. certificates) translate themselves
+    document.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
 }
 
 function toggleLanguage() {

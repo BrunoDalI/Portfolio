@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="426" viewBox="0 0 640 426" font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b061f"/><stop offset="1" stop-color="#b45309"/></linearGradient></defs>
+<rect width="640" height="426" fill="url(#g)"/>
+<circle cx="560" cy="60" r="160" fill="#fff" fill-opacity=".06"/><circle cx="600" cy="400" r="120" fill="#fff" fill-opacity=".05"/>
+<g transform="translate(375 150)" fill="#fff"><rect x="20" y="0" width="190" height="80" rx="22" fill-opacity=".95"/><rect x="0" y="50" width="45" height="80" rx="18" fill-opacity=".85"/><rect x="185" y="50" width="45" height="80" rx="18" fill-opacity=".85"/><rect x="35" y="70" width="160" height="50" rx="12" fill="#fde68a"/><line x1="115" x2="115" y1="72" y2="118" stroke="#b45309" stroke-width="3"/><rect x="18" y="128" width="12" height="22" rx="4" fill-opacity=".8"/><rect x="200" y="128" width="12" height="22" rx="4" fill-opacity=".8"/></g>
+<text x="40" y="70" font-size="15" font-weight="600" fill="#fff" fill-opacity=".8" letter-spacing="2">FLUTTER WEB · BLOC</text>
+<text x="40" y="120" font-size="40" font-weight="800" fill="#fff">Estofaria</text><text x="40" y="166" font-size="40" font-weight="800" fill="#fff">Cardoso</text>
+<text x="40" y="220" font-size="17" fill="#fff" fill-opacity=".85">Website for an upholstery shop</text>
+<rect x="40" y="330" width="120" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="100" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">Flutter Web</text><rect x="170.4" y="330" width="62" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="201" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">BLoC</text><rect x="242.0" y="330" width="104" height="30" rx="15" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".35"/><text x="294" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">go_router</text>
+</svg>

@@ -20,6 +20,13 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+a:focus-visible,
+[role="button"]:focus-visible {
+    outline: .2rem solid var(--main-color);
+    outline-offset: .4rem;
+    border-radius: .4rem;
+}
+
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
@@ -39,6 +46,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    transition: background .3s ease, color .3s ease;
 }
 
 .header {
@@ -299,8 +307,10 @@ section {
     bottom: 0;
     right: 40px;
     pointer-events: none;
+    width: auto;
     height: 80vh;
     max-width: 480px;
+    object-fit: contain;
     max-height: 100vh;
 }
 
@@ -317,6 +327,7 @@ span {
 
 .about-img img {
     width: 40vw;
+    height: auto;
 }
 
 .heading {
@@ -553,79 +564,6 @@ span {
 .skill-box h4 {
     font-size: 1.6rem;
     font-weight: 600;
-}
-
-.testimonial-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 5rem 1rem;
-}
-
-.testimonial-container .testimonial-wrapper {
-    position: relative;
-    max-width: 90rem;
-    width: 100%;
-    padding: 5rem;
-}
-
-.testimonial-wrapper .testimonial-box {
-    padding: 1rem;
-    border-radius: 2rem;
-    overflow: hidden;
-}
-
-.testimonial-content .testimonial-slide {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: var(--bg-color);
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-    padding: 3rem 5rem;
-    border-top: .8rem solid var(--main-color);
-    border-bottom: .8rem solid var(--main-color);
-}
-
-.testimonial-slide img {
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
-}
-
-.testimonial-slide h3 {
-    font-size: 2.5rem;
-    margin: 2rem 0;
-}
-
-.testimonial-slide p {
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.testimonial-box .swiper-button-next,
-.testimonial-box .swiper-button-prev {
-    color: var(--main-color);
-}
-
-.testimonial-box .swiper-button-next {
-    right: 0;
-}
-
-.testimonial-box .swiper-button-prev {
-    left: 0;
-}
-
-.testimonial-box .swiper-pagination-bullet {
-    background: rgba(0, 0, 0, .8);
-}
-
-.testimonial-box .swiper-pagination-bullet-active {
-    background: var(--main-color);
 }
 
 .contact {
@@ -968,19 +906,6 @@ span {
     .about-img img {
         width: 70vw;
         margin-top: -2rem;
-    }
-
-    .testimonial-container .testimonial-wrapper {
-        padding: 5rem 0;
-    }
-
-    .testimonial-content .testimonial-slide {
-        padding: 3rem 2rem;
-    }
-
-    .testimonial-box .swiper-button-next,
-    .testimonial-box .swiper-button-prev {
-        display: none;
     }
 }
 

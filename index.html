@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Bruno Dall</title>
+    <title>Bruno Dall | Mobile Developer</title>
+    <meta name="description" content="Portfolio of Bruno Dall Stella Cardoso, mobile developer specialized in Flutter, with projects in React, Python and web development.">
+    <meta name="author" content="Bruno Dall Stella Cardoso">
+    <meta name="theme-color" content="#20B2AA">
 
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- open graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bruno Dall | Mobile Developer">
+    <meta property="og:description" content="Flutter developer building apps with Clean Architecture, BLoC and well-tested code.">
+    <meta property="og:image" content="images/projects/brl-exchange-rate.svg">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,27 +27,26 @@
 <body>
 
     <!-- header design -->
-    <!-- <div class="banner">EM DESENVOLVIMENTO</div> -->
     <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+        <a href="#home" class="logo">Portfolio.</a>
 
         <nav class="navbar">
             <a href="#home" class="active" data-i18n="nav.home">Home</a>
             <a href="#about" data-i18n="nav.about">About</a>
             <a href="#services" data-i18n="nav.services">Services</a>
-            <a href="#skills" data-i18n="nav.skills">Skills</a>
             <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
             <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="header-actions">
-            <div class="bx bx-moon" id="darkMode-icon"></div>
+            <div class="bx bx-moon" id="darkMode-icon" role="button" tabindex="0" aria-label="Switch to dark mode"></div>
 
             <div id="language-icon" role="button" tabindex="0" aria-label="Mudar para português">
-                <img src="images/flags/usa_flag.png" id="lang-flag" alt="Language Icon" width="30" height="20">
+                <img src="images/flags/usa_flag.png" id="lang-flag" alt="" width="30" height="20">
             </div>
 
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-menu" id="menu-icon" role="button" tabindex="0" aria-label="Open menu"></div>
         </div>
 
     </header>
@@ -81,10 +87,6 @@
                     <i class='bx bx-palette'></i>
                     <h3>Designer</h3>
                 </div>
-<!--                 <div class="profession" style="--i:3;">
-                    <i class='bx bx-video-recording'></i>
-                    <h3>Videographer</h3>
-                </div> -->
 
                 <div class="circle"></div>
             </div>
@@ -93,14 +95,14 @@
         </div>
 
         <div class="home-img">
-            <img src="images/home.png" alt="">
+            <img src="images/home.png" alt="Bruno Dall" width="933" height="1400">
         </div>
     </section>
 
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.png" alt="">
+            <img src="images/about.png" alt="Bruno Dall" width="933" height="1400" loading="lazy">
         </div>
 
         <div class="about-content">
@@ -154,69 +156,69 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/projects/brl-exchange-rate.svg" alt="BRL Exchange Rate App">
+                <img loading="lazy" src="images/projects/brl-exchange-rate.svg" alt="BRL Exchange Rate App">
 
                 <div class="portfolio-layer">
                     <h4 data-i18n="projects.brl.title">BRL Exchange Rate App</h4>
                     <p data-i18n="projects.brl.text">Flutter app that shows the Brazilian Real exchange rate against other currencies, with a 30-day history (open, high, low, close and variation), built with Clean Architecture.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/Specs" target="_blank" rel="noopener" aria-label="BRL Exchange Rate App on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/BrunoDalI/Specs" target="_blank" rel="noopener" aria-label="BRL Exchange Rate App on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/brasil-cripto.svg" alt="BrasilCripto">
+                <img loading="lazy" src="images/projects/brasil-cripto.svg" alt="BrasilCripto">
 
                 <div class="portfolio-layer">
                     <h4>BrasilCripto</h4>
                     <p data-i18n="projects.cripto.text">Flutter app to search, view details and favorite cryptocurrencies using the CoinGecko API, with BLoC, Dio, GetIt and SQLite.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/brasil_cripto" target="_blank" rel="noopener" aria-label="BrasilCripto on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/BrunoDalI/brasil_cripto" target="_blank" rel="noopener" aria-label="BrasilCripto on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/ia-cnn.svg" alt="Room Classifier with CNN">
+                <img loading="lazy" src="images/projects/ia-cnn.svg" alt="Room Classifier with CNN">
 
                 <div class="portfolio-layer">
                     <h4 data-i18n="projects.cnn.title">Room Classifier with CNN</h4>
                     <p data-i18n="projects.cnn.text">Computer Science thesis: a convolutional neural network that identifies each room of a simulated house from images.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/IA_CNN" target="_blank" rel="noopener" aria-label="Room Classifier with CNN on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/BrunoDalI/IA_CNN" target="_blank" rel="noopener" aria-label="Room Classifier with CNN on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/stock-regulator.svg" alt="Stock Regulator">
+                <img loading="lazy" src="images/projects/stock-regulator.svg" alt="Stock Regulator">
 
                 <div class="portfolio-layer">
                     <h4>Stock Regulator</h4>
                     <p data-i18n="projects.stock.text">Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/kanban-react.svg" alt="Kanban Board">
+                <img loading="lazy" src="images/projects/kanban-react.svg" alt="Kanban Board">
 
                 <div class="portfolio-layer">
                     <h4 data-i18n="projects.kanban.title">Kanban Board</h4>
                     <p data-i18n="projects.kanban.text">My first React application: a kanban board to organize tasks through cards.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/kanban-with-react" target="_blank" rel="noopener" aria-label="Kanban Board on GitHub"><i class='bx bxl-github'></i></a>
-                    <a href="https://r2ur3s.csb.app/" target="_blank" rel="noopener" aria-label="Kanban Board live demo"><i class='bx bx-link-external'></i></a>
+                        <a href="https://github.com/BrunoDalI/kanban-with-react" target="_blank" rel="noopener" aria-label="Kanban Board on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://r2ur3s.csb.app/" target="_blank" rel="noopener" aria-label="Kanban Board live demo"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/snake-game.svg" alt="Snake Game">
+                <img loading="lazy" src="images/projects/snake-game.svg" alt="Snake Game">
 
                 <div class="portfolio-layer">
                     <h4 data-i18n="projects.snake.title">Snake Game</h4>
                     <p data-i18n="projects.snake.text">Classic snake game written in Python with Pygame for the Digital Image Processing and Computer Graphics course.</p>
                     <div class="portfolio-links">
-                    <a href="https://github.com/BrunoDalI/Processamento-Digital-de-imagem" target="_blank" rel="noopener" aria-label="Snake Game on GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/BrunoDalI/Processamento-Digital-de-imagem" target="_blank" rel="noopener" aria-label="Snake Game on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
@@ -310,16 +312,13 @@
         </div>
 
         <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>

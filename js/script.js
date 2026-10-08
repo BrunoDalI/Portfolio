@@ -7,6 +7,13 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+menuIcon.onkeydown = e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        menuIcon.click();
+    }
+};
+
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section[id]');
@@ -39,30 +46,31 @@ window.onscroll = () => {
 };
 
 
-/*========== swiper ==========*/
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
-
-
 /*========== dark light mode ==========*/
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
+function setDarkMode(enabled) {
+    document.body.classList.toggle('dark-mode', enabled);
+    darkModeIcon.classList.toggle('bx-sun', enabled);
+    darkModeIcon.setAttribute('aria-label', enabled ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
+    let enabled = !document.body.classList.contains('dark-mode');
+    setDarkMode(enabled);
+    try { localStorage.setItem('theme', enabled ? 'dark' : 'light'); } catch (e) {}
 };
+
+darkModeIcon.onkeydown = e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        darkModeIcon.click();
+    }
+};
+
+let savedTheme = null;
+try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+setDarkMode(savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
 
 
 /*========== scroll reveal ==========*/

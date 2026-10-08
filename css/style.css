@@ -97,11 +97,16 @@ body {
     opacity: .7;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .header.sticky #darkMode-icon {
@@ -110,14 +115,14 @@ body {
 }
 
 #language-icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-.header.sticky #language-icon {
-    color: var(--text-color);
-    opacity: .9;
+#language-icon img {
+    display: block;
+    border-radius: .3rem;
 }
 
 #menu-icon {
@@ -726,19 +731,8 @@ span {
     }
 
     #darkMode-icon {
-        position: absolute;
-        right: 7rem;
         font-size: 2.6rem;
         color: var(--text-color);
-        margin-bottom: .1rem;
-    }
-
-    #language-icon {
-        position: absolute;
-        right: 7rem;
-        font-size: 2.6rem;
-        color: var(--text-color);
-        margin-bottom: .1rem;
     }
 
     .navbar {
@@ -887,14 +881,6 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    #darkMode-icon {
-        right: 6rem;
-    }
-
-    #language-icon {
-        right: 6rem;
     }
 
     .home .profession-box .profession:nth-child(1) {

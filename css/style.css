@@ -698,6 +698,10 @@ span {
     color: var(--white-color);
 }
 
+.footer-text em {
+    font-style: normal;
+}
+
 .footer-iconTop a {
     display: inline-flex;
     justify-content: center;

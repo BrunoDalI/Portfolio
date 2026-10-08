@@ -25,18 +25,18 @@
         <a href="#" class="logo">Portfolio.</a>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#services" data-i18n="nav.services">Services</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="header-actions">
             <div class="bx bx-moon" id="darkMode-icon"></div>
 
-            <div id="language-icon" onclick="toggleLanguage()">
+            <div id="language-icon" role="button" tabindex="0" aria-label="Mudar para português">
                 <img src="images/flags/usa_flag.png" id="lang-flag" alt="Language Icon" width="30" height="20">
             </div>
 
@@ -48,13 +48,13 @@
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, I am</h3>
+            <h3 data-i18n="home.hello">Hello, I am</h3>
             <h1>Bruno Dall Stella Cardoso</h1>
-            <p>
+            <p data-i18n="home.p1">
                 Mobile developer graduated in Computer Science, focused on Flutter and building apps with
                 Clean Architecture, BLoC and well-tested code. I also work with React Native, Java/Kotlin and Swift.
             </p>
-            <p>
+            <p data-i18n="home.p2">
                 I also work as a designer, which helps me build interfaces that are both functional and pleasant to use,
                 and I keep expanding into web development to deliver complete mobile and web solutions.
             </p>
@@ -63,7 +63,7 @@
                 <a href="https://www.linkedin.com/in/bruno-dall-41718b168/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
             </div>
 
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#contact" class="btn" data-i18n="home.cta">Contact Me</a>
         </div>
 
 
@@ -71,11 +71,11 @@
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class='bx bx-mobile-alt'></i>
-                    <h3>Mobile Developer</h3>
+                    <h3 data-i18n="prof.mobile">Mobile Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
+                    <h3 data-i18n="prof.web">Web Developer</h3>
                 </div>
                 <div class="profession" style="--i:2;">
                     <i class='bx bx-palette'></i>
@@ -97,25 +97,6 @@
         </div>
     </section>
 
-    <script>
-        function toggleLanguage() {
-            let body = document.body;
-            let currentLang = body.getAttribute("data-lang");
-            let newLang = currentLang === "en" ? "pt" : "en";
-            
-            body.setAttribute("data-lang", newLang);
-
-            // Atualiza os textos dos elementos
-            document.querySelectorAll("[data-en]").forEach(element => {
-                element.innerText = element.getAttribute(`data-${newLang}`);
-            });
-
-            // Muda a imagem da bandeira
-            let langFlag = document.getElementById("lang-flag");
-            langFlag.src = newLang === "en" ? "images/flags/usa_flag.png" : "images/flags/brazil_flag.png";
-        }
-    </script>
-
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
@@ -123,45 +104,45 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>
+            <h2 class="heading" data-i18n="about.title">About <span>Me</span></h2>
+            <h3 data-i18n="about.h3">
                 Hi, I'm Bruno, a mobile developer who loves turning ideas into fast, well-structured apps.
             </h3>
-            <p>
+            <p data-i18n="about.p1">
                 I graduated in Computer Science, and my final project was a convolutional neural network that
                 recognizes the rooms of a simulated house from images. Today my day-to-day is Flutter: I build apps
                 organized with Clean Architecture and SOLID, state management with BLoC, dependency injection with GetIt,
                 REST integrations with Dio and local persistence with SQLite.
             </p>
-            <p>
+            <p data-i18n="about.p2">
                 Beyond code, I have a design background, so I care about the details of the interface and the user experience.
                 I'm always looking for new challenges where I can combine technical knowledge and creativity.
             </p>
-            <a href="https://github.com/BrunoDalI" target="_blank" rel="noopener" class="btn">See my GitHub</a>
+            <a href="https://github.com/BrunoDalI" target="_blank" rel="noopener" class="btn" data-i18n="about.cta">See my GitHub</a>
         </div>
     </section>
 
     <!-- services section design -->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading" data-i18n="services.title">My <span>Services</span></h2>
 
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-mobile-alt'></i>
-                <h3>Mobile Development</h3>
-                <p>Cross-platform apps with Flutter and React Native, plus native Android (Kotlin) and iOS (Swift),
+                <h3 data-i18n="services.mobile.title">Mobile Development</h3>
+                <p data-i18n="services.mobile.text">Cross-platform apps with Flutter and React Native, plus native Android (Kotlin) and iOS (Swift),
                     built on Clean Architecture, BLoC and automated tests.</p>
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Responsive landing pages and web apps with HTML, CSS, JavaScript and React, focused on
+                <h3 data-i18n="services.web.title">Web Development</h3>
+                <p data-i18n="services.web.text">Responsive landing pages and web apps with HTML, CSS, JavaScript and React, focused on
                     performance and a clean, accessible layout.</p>
             </div>
             <div class="services-box">
                 <i class='bx bxs-paint'></i>
-                <h3>UI &amp; Graphic Design</h3>
-                <p>Interfaces, prototypes and visual identity designed with the user in mind, ready to be handed
+                <h3 data-i18n="services.design.title">UI &amp; Graphic Design</h3>
+                <p data-i18n="services.design.text">Interfaces, prototypes and visual identity designed with the user in mind, ready to be handed
                     off and implemented in code.</p>
             </div>
         </div>
@@ -169,15 +150,15 @@
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading" data-i18n="portfolio.title">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <img src="images/projects/brl-exchange-rate.svg" alt="BRL Exchange Rate App">
 
                 <div class="portfolio-layer">
-                    <h4>BRL Exchange Rate App</h4>
-                    <p>Flutter app that shows the Brazilian Real exchange rate against other currencies, with a 30-day history (open, high, low, close and variation), built with Clean Architecture.</p>
+                    <h4 data-i18n="projects.brl.title">BRL Exchange Rate App</h4>
+                    <p data-i18n="projects.brl.text">Flutter app that shows the Brazilian Real exchange rate against other currencies, with a 30-day history (open, high, low, close and variation), built with Clean Architecture.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/Specs" target="_blank" rel="noopener" aria-label="BRL Exchange Rate App on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
@@ -188,7 +169,7 @@
 
                 <div class="portfolio-layer">
                     <h4>BrasilCripto</h4>
-                    <p>Flutter app to search, view details and favorite cryptocurrencies using the CoinGecko API, with BLoC, Dio, GetIt and SQLite.</p>
+                    <p data-i18n="projects.cripto.text">Flutter app to search, view details and favorite cryptocurrencies using the CoinGecko API, with BLoC, Dio, GetIt and SQLite.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/brasil_cripto" target="_blank" rel="noopener" aria-label="BrasilCripto on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
@@ -198,8 +179,8 @@
                 <img src="images/projects/ia-cnn.svg" alt="Room Classifier with CNN">
 
                 <div class="portfolio-layer">
-                    <h4>Room Classifier with CNN</h4>
-                    <p>Computer Science thesis: a convolutional neural network that identifies each room of a simulated house from images.</p>
+                    <h4 data-i18n="projects.cnn.title">Room Classifier with CNN</h4>
+                    <p data-i18n="projects.cnn.text">Computer Science thesis: a convolutional neural network that identifies each room of a simulated house from images.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/IA_CNN" target="_blank" rel="noopener" aria-label="Room Classifier with CNN on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
@@ -210,7 +191,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Stock Regulator</h4>
-                    <p>Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
+                    <p data-i18n="projects.stock.text">Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
@@ -220,8 +201,8 @@
                 <img src="images/projects/kanban-react.svg" alt="Kanban Board">
 
                 <div class="portfolio-layer">
-                    <h4>Kanban Board</h4>
-                    <p>My first React application: a kanban board to organize tasks through cards.</p>
+                    <h4 data-i18n="projects.kanban.title">Kanban Board</h4>
+                    <p data-i18n="projects.kanban.text">My first React application: a kanban board to organize tasks through cards.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/kanban-with-react" target="_blank" rel="noopener" aria-label="Kanban Board on GitHub"><i class='bx bxl-github'></i></a>
                     <a href="https://r2ur3s.csb.app/" target="_blank" rel="noopener" aria-label="Kanban Board live demo"><i class='bx bx-link-external'></i></a>
@@ -232,8 +213,8 @@
                 <img src="images/projects/snake-game.svg" alt="Snake Game">
 
                 <div class="portfolio-layer">
-                    <h4>Snake Game</h4>
-                    <p>Classic snake game written in Python with Pygame for the Digital Image Processing and Computer Graphics course.</p>
+                    <h4 data-i18n="projects.snake.title">Snake Game</h4>
+                    <p data-i18n="projects.snake.text">Classic snake game written in Python with Pygame for the Digital Image Processing and Computer Graphics course.</p>
                     <div class="portfolio-links">
                     <a href="https://github.com/BrunoDalI/Processamento-Digital-de-imagem" target="_blank" rel="noopener" aria-label="Snake Game on GitHub"><i class='bx bxl-github'></i></a>
                     </div>
@@ -242,14 +223,14 @@
         </div>
 
         <div class="portfolio-more">
-            <a href="https://github.com/BrunoDalI?tab=repositories" target="_blank" rel="noopener" class="btn">See all on GitHub</a>
+            <a href="https://github.com/BrunoDalI?tab=repositories" target="_blank" rel="noopener" class="btn" data-i18n="portfolio.more">See all on GitHub</a>
         </div>
     </section>
 
 
     <!-- skills section design -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
+        <h2 class="heading" data-i18n="skills.title">My <span>Skills</span></h2>
 
         <div class="skills-container">
             <div class="skill-box">
@@ -305,8 +286,8 @@
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <p class="contact-text">Have a project in mind or an opportunity to talk about? Reach me through one of the channels below.</p>
+        <h2 class="heading" data-i18n="contact.title">Contact <span>Me!</span></h2>
+        <p class="contact-text" data-i18n="contact.text">Have a project in mind or an opportunity to talk about? Reach me through one of the channels below.</p>
 
         <div class="contact-container">
             <a href="https://www.linkedin.com/in/bruno-dall-41718b168/" target="_blank" rel="noopener" class="contact-box">
@@ -325,7 +306,7 @@
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright © <time id="current-year">2025</time> Bruno Dall | All Rights Reserved.</p>
+            <p>Copyright © <time id="current-year">2025</time> Bruno Dall | <em data-i18n="footer.rights">All Rights Reserved.</em></p>
         </div>
 
         <div class="footer-iconTop">

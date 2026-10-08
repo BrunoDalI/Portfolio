@@ -13,8 +13,6 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">   
 </head>
@@ -30,6 +28,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -60,14 +59,11 @@
                 and I keep expanding into web development to deliver complete mobile and web solutions.
             </p>
             <div class="social-media">
-                <a href="https://github.com/BrunoDalI" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/bruno-dall-41718b168/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-                <!-- <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a> -->
+                <a href="https://github.com/BrunoDalI" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/bruno-dall-41718b168/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
             </div>
 
-            <a href="#" class="btn">Download CV</a>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
 
 
@@ -173,122 +169,158 @@
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
+                <img src="images/projects/brl-exchange-rate.svg" alt="BRL Exchange Rate App">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>BRL Exchange Rate App</h4>
+                    <p>Flutter app that shows the Brazilian Real exchange rate against other currencies, with a 30-day history (open, high, low, close and variation), built with Clean Architecture.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/Specs" target="_blank" rel="noopener" aria-label="BRL Exchange Rate App on GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
+                <img src="images/projects/brasil-cripto.svg" alt="BrasilCripto">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>BrasilCripto</h4>
+                    <p>Flutter app to search, view details and favorite cryptocurrencies using the CoinGecko API, with BLoC, Dio, GetIt and SQLite.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/brasil_cripto" target="_blank" rel="noopener" aria-label="BrasilCripto on GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="">
+                <img src="images/projects/ia-cnn.svg" alt="Room Classifier with CNN">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Room Classifier with CNN</h4>
+                    <p>Computer Science thesis: a convolutional neural network that identifies each room of a simulated house from images.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/IA_CNN" target="_blank" rel="noopener" aria-label="Room Classifier with CNN on GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="">
+                <img src="images/projects/stock-regulator.svg" alt="Stock Regulator">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Stock Regulator</h4>
+                    <p>Responsive landing page for Stock Regulator, a product to improve inventory control.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/stock-regulator-webpage" target="_blank" rel="noopener" aria-label="Stock Regulator on GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="">
+                <img src="images/projects/kanban-react.svg" alt="Kanban Board">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Kanban Board</h4>
+                    <p>My first React application: a kanban board to organize tasks through cards.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/kanban-with-react" target="_blank" rel="noopener" aria-label="Kanban Board on GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://r2ur3s.csb.app/" target="_blank" rel="noopener" aria-label="Kanban Board live demo"><i class='bx bx-link-external'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
+                <img src="images/projects/snake-game.svg" alt="Snake Game">
 
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Snake Game</h4>
+                    <p>Classic snake game written in Python with Pygame for the Digital Image Processing and Computer Graphics course.</p>
+                    <div class="portfolio-links">
+                    <a href="https://github.com/BrunoDalI/Processamento-Digital-de-imagem" target="_blank" rel="noopener" aria-label="Snake Game on GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="portfolio-more">
+            <a href="https://github.com/BrunoDalI?tab=repositories" target="_blank" rel="noopener" class="btn">See all on GitHub</a>
         </div>
     </section>
 
 
-    <section>
-        <h2 class="heading">All <span>Certifications</span></h2>
-        <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
-            <!-- Indicadores -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class='bx bxl-flutter'></i>
+                <h4>Flutter</h4>
             </div>
-          
-            <!-- Slides -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/portfolio1.jpg" class="carousel-img d-block" alt="Descrição do Slide 1" loading="lazy">
-                <!-- Se desejar, pode adicionar legenda aqui -->
-              </div>
-              <div class="carousel-item">
-                <img src="images/portfolio2.jpg" class="carousel-img d-block" alt="Descrição do Slide 2" loading="lazy">
-              </div>
-              <div class="carousel-item">
-                <img src="images/portfolio3.jpg" class="carousel-img d-block" alt="Descrição do Slide 3" loading="lazy">
-              </div>
+            <div class="skill-box">
+                <i class='bx bx-code-curly'></i>
+                <h4>Dart</h4>
             </div>
-          
-            <!-- Controles -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
-          </div>          
+            <div class="skill-box">
+                <i class='bx bxl-react'></i>
+                <h4>React Native</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-android'></i>
+                <h4>Kotlin</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-java'></i>
+                <h4>Java</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-apple'></i>
+                <h4>Swift</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-javascript'></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-react'></i>
+                <h4>React</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-html5'></i>
+                <h4>HTML</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-css3'></i>
+                <h4>CSS</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-python'></i>
+                <h4>Python</h4>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-git'></i>
+                <h4>Git</h4>
+            </div>
+        </div>
     </section>
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- contact section design -->
-<!--     <section class="contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
+        <p class="contact-text">Have a project in mind or an opportunity to talk about? Reach me through one of the channels below.</p>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section> -->
+        <div class="contact-container">
+            <a href="https://www.linkedin.com/in/bruno-dall-41718b168/" target="_blank" rel="noopener" class="contact-box">
+                <i class='bx bxl-linkedin'></i>
+                <h3>LinkedIn</h3>
+                <p>Bruno Dall</p>
+            </a>
+            <a href="https://github.com/BrunoDalI" target="_blank" rel="noopener" class="contact-box">
+                <i class='bx bxl-github'></i>
+                <h3>GitHub</h3>
+                <p>@BrunoDalI</p>
+            </a>
+        </div>
+    </section>
 
     <!-- footer design -->
     <footer class="footer">

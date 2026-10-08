@@ -39,6 +39,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    transition: background .3s ease, color .3s ease;
 }
 
 .header {

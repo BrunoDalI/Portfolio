@@ -350,7 +350,7 @@ span {
 .services .services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -388,7 +388,8 @@ span {
 
 .services-box p {
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    line-height: 1.6;
+    margin-top: 1rem;
 }
 
 .portfolio {

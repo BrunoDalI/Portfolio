@@ -7,6 +7,13 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+menuIcon.onkeydown = e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        menuIcon.click();
+    }
+};
+
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section[id]');

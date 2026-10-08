@@ -97,11 +97,16 @@ body {
     opacity: .7;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .header.sticky #darkMode-icon {
@@ -110,14 +115,14 @@ body {
 }
 
 #language-icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-.header.sticky #language-icon {
-    color: var(--text-color);
-    opacity: .9;
+#language-icon img {
+    display: block;
+    border-radius: .3rem;
 }
 
 #menu-icon {
@@ -137,23 +142,33 @@ section {
 }
 
 .home .home-content {
-    max-width: 44rem;
+    position: relative;
+    z-index: 1;
+    max-width: 48rem;
 }
 
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
-    line-height: .3;
+    line-height: 1.2;
 }
 
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: .3rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
 }
 
 .home-content p {
     font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.home-content .social-media {
+    display: flex;
+    align-items: center;
 }
 
 .home-content .social-media a {
@@ -726,19 +741,8 @@ span {
     }
 
     #darkMode-icon {
-        position: absolute;
-        right: 7rem;
         font-size: 2.6rem;
         color: var(--text-color);
-        margin-bottom: .1rem;
-    }
-
-    #language-icon {
-        position: absolute;
-        right: 7rem;
-        font-size: 2.6rem;
-        color: var(--text-color);
-        margin-bottom: .1rem;
     }
 
     .navbar {
@@ -789,6 +793,10 @@ span {
 
     .home-content h1 {
         font-size: 5rem;
+    }
+
+    .home-content .social-media {
+        justify-content: center;
     }
 
     .home-content .social-media a {
@@ -887,14 +895,6 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    #darkMode-icon {
-        right: 6rem;
-    }
-
-    #language-icon {
-        right: 6rem;
     }
 
     .home .profession-box .profession:nth-child(1) {

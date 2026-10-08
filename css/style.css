@@ -20,6 +20,13 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+a:focus-visible,
+[role="button"]:focus-visible {
+    outline: .2rem solid var(--main-color);
+    outline-offset: .4rem;
+    border-radius: .4rem;
+}
+
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);

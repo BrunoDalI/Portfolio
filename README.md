@@ -53,6 +53,10 @@ python3 -m http.server 8080
 
 E abrir <http://localhost:8080>.
 
+## Publicando alterações
+
+O GitHub Pages deixa o CSS e o JS em cache no navegador. Ao alterar `css/style.css` ou `js/script.js`, atualize o `?v=` nas tags `<link>` e `<script>` do `index.html` (ex.: `?v=20261008` → data do dia) para que os visitantes recebam a versão nova.
+
 ## Adicionando um projeto
 
 1. Crie a capa em `images/projects/` (640×426).

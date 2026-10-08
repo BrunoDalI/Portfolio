@@ -9,14 +9,24 @@ Site estático feito com HTML, CSS e JavaScript puro, com:
 - 📱 Layout responsivo
 - 🗂️ Projetos reais do GitHub com capas próprias
 
-## Projetos em destaque
+## Principais projetos
+
+| Projeto | Stack | Links |
+| --- | --- | --- |
+| Flexa | Flutter, Firebase, BLoC, SQLite | Código privado |
+| Orçamentos Online | Flutter, Clean Architecture, BLoC, PDF | Código privado |
+| StellCore Software | React, TypeScript, Tailwind, shadcn/ui | Código privado · [LinkedIn](https://www.linkedin.com/company/stellcore-software/about/) |
+| Estofaria Cardoso | Flutter Web, BLoC, go_router | Código privado |
+| Unique Combinations | HTML, CSS, Bootstrap | [Repositório](https://github.com/GMCfromhell/unique-combinations-webpage) · [Site](https://gmcfromhell.github.io/unique-combinations-webpage/) |
+| Stock Regulator | HTML, CSS, Bootstrap | [Repositório](https://github.com/BrunoDalI/stock-regulator-webpage) · [Site](https://brunodali.github.io/stock-regulator-webpage/) |
+
+## Outros projetos
 
 | Projeto | Stack | Repositório |
 | --- | --- | --- |
 | BRL Exchange Rate App | Flutter, Clean Architecture | [Specs](https://github.com/BrunoDalI/Specs) |
 | BrasilCripto | Flutter, BLoC, Dio, SQLite | [brasil_cripto](https://github.com/BrunoDalI/brasil_cripto) |
 | Classificador de Cômodos com CNN (TCC) | Python, TensorFlow/Keras | [IA_CNN](https://github.com/BrunoDalI/IA_CNN) |
-| Stock Regulator | HTML, CSS, Bootstrap | [stock-regulator-webpage](https://github.com/BrunoDalI/stock-regulator-webpage) |
 | Kanban Board | React | [kanban-with-react](https://github.com/BrunoDalI/kanban-with-react) |
 | Snake Game | Python, Pygame | [Processamento-Digital-de-imagem](https://github.com/BrunoDalI/Processamento-Digital-de-imagem) |
 
@@ -46,5 +56,7 @@ E abrir <http://localhost:8080>.
 ## Adicionando um projeto
 
 1. Crie a capa em `images/projects/` (640×426).
-2. Copie um `.portfolio-box` em `index.html` e ajuste título, descrição e links.
+2. Copie um `.portfolio-box` da seção `#featured` (principais) ou `#other-projects` (outros) em `index.html` e ajuste título, descrição e links.
+   - Repositório privado: use o selo `.portfolio-private` no lugar do botão "Code".
+   - Site no ar: adicione o botão "Live site" e o selo `.portfolio-badge`.
 3. Adicione a tradução em português no objeto `translations.pt` de `js/script.js`, usando a mesma chave do `data-i18n`.

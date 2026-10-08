@@ -250,17 +250,18 @@ section {
     100% { transform: rotate(-360deg); }
 }
 
+/* each label is a zero-width anchor sitting on the circle's left edge,
+   so its content is always centered on the line whatever the text length */
 .home .profession-box .profession {
     position: absolute;
-    left: 0;
+    left: 104px; /* (box 768px - circle 560px) / 2 */
+    width: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg / 3 * var(--i)));
-    transform-origin: 384px center;
-    background: var(--bg-color);
-    padding: 13px 0;
+    transform-origin: 280px center; /* circle center */
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -288,6 +289,13 @@ section {
     border: 3px solid var(--main-color);
     border-radius: 50%;
     z-index: -1;
+}
+
+/* hide the circle line behind the label */
+.home .profession-box .profession > * {
+    background: var(--bg-color);
+    padding: .4rem 1rem;
+    white-space: nowrap;
 }
 
 .home .profession-container .overlay {

@@ -263,23 +263,17 @@ section {
     padding: 13px 0;
 }
 
-.home .profession-box .profession:nth-child(1) i {
-    margin-right: 15px;
-}
-
-.home .profession-box .profession:nth-child(2),
-.home .profession-box .profession:nth-child(4) {
-    padding-bottom: 20px;
-}
-
 .home .profession i {
+    display: block;
     font-size: 3.8rem;
+    line-height: 1;
 }
 
 .home .profession h3 {
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600;
+    text-align: center;
 }
 
 .home .profession-box .circle {

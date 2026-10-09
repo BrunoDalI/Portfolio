@@ -100,7 +100,7 @@ const translations = {
         "nav.portfolio": "Portfólio",
         "nav.contact": "Contato",
         "home.hello": "Olá, eu sou",
-        "home.p1": "Desenvolvedor mobile formado em Ciência da Computação, focado em Flutter e na construção de apps com Clean Architecture, BLoC e código bem testado. Também trabalho com React Native, Java/Kotlin e Swift.",
+        "home.p1": "Desenvolvedor mobile especializado em Flutter, com experiência na criação de aplicações modernas, escaláveis e multiplataforma.",
         "home.p2": "Também atuo como designer, o que me ajuda a criar interfaces funcionais e agradáveis de usar, e sigo expandindo para o desenvolvimento web para entregar soluções completas mobile e web.",
         "home.cta": "Fale Comigo",
         "prof.mobile": "Dev Mobile",

@@ -106,7 +106,7 @@ const translations = {
         "prof.mobile": "Dev Mobile",
         "prof.web": "Dev Web",
         "about.title": "Sobre <span>Mim</span>",
-        "about.h3": "Oi, eu sou o Bruno, um desenvolvedor mobile que adora transformar ideias em apps rápidos e bem estruturados.",
+        "about.h3": "Olá! Sou Bruno Dall, desenvolvedor mobile pós-graduado em Desenvolvimento Mobile e graduado em Ciência da Computação, apaixonado por tecnologia e pela criação de soluções digitais que resolvem problemas reais.",
         "about.p1": "Sou formado em Ciência da Computação, e meu TCC foi uma rede neural convolucional que reconhece os cômodos de uma casa simulada a partir de imagens. Hoje meu dia a dia é Flutter: desenvolvo apps organizados com Clean Architecture e SOLID, gerência de estado com BLoC, injeção de dependências com GetIt, integrações REST com Dio e persistência local com SQLite.",
         "about.p2": "Além do código, tenho experiência com design, então cuido dos detalhes da interface e da experiência do usuário. Estou sempre em busca de novos desafios onde eu possa unir conhecimento técnico e criatividade.",
         "about.cta": "Ver meu GitHub",

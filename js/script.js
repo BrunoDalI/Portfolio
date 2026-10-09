@@ -153,7 +153,7 @@ const translations = {
         "edu.diploma": "Ver diploma",
         "cert.drive": "Ver todos no Google Drive",
         "contact.title": "Fale <span>Comigo!</span>",
-        "contact.text": "Tem um projeto em mente ou uma oportunidade para conversar? Fale comigo por um dos canais abaixo.",
+        "contact.text": "Tem um projeto em mente ou uma oportunidade profissional? Vamos conversar! Entre em contato por um dos canais abaixo e vamos tirar suas ideias do papel.",
         "footer.rights": "Todos os direitos reservados."
     }
 };
